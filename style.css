@@ -1,0 +1,150 @@
+@import 'mobile.css';
+@import 'reset.css';
+
+
+:root {
+    --azul-primario: #0A3871;
+    --azul-secundario: #F3F5FC;
+    --cor-tres: #D8DFE8;
+    --branco: #fff;
+    --cinza: #495057;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--azul-secundario);
+}
+
+header {
+    display: flex;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    color: var(--azul-primario);
+    background-color: var(--azul-secundario);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    width: 680px;
+    border: none;
+}
+
+.container_text_info p,
+span {
+    color: var(--cinza);
+
+}
+
+.container_text_info div {
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+    text-align: center;
+}
+
+.btn-primary,
+.btn-secundary {
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 15px;
+    border: none;
+    border-radius: 40px;
+}
+
+.btn-primary {
+    background-color: var(--azul-primario);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.btn-secundary {
+    background-color: var(--cor-tres);
+    color: var(--azul-primario);
+    cursor: pointer;
+
+}
+
+.btn-secundary:hover {
+    background-color: #bbd3f7;
+    transition: 0.5;
+}
+
+.btn-primary:hover {
+    background-color: #1a4d8b;
+    transition: 0.5;
+}
+
+.btn-primary:hover,
+.btn-secundary:hover {
+    transition: 0.5s;
+}
+
+.desc-text {
+    width: 400px;
+    height: 700px;
+    flex-shrink: 0;
+    background-color: var(--branco);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin: 20px;
+
+
+}
+
+#msg-empty {
+    align-self: stretch;
+    align-items: center;
+
+}
+
+#msg-empty h2 {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+#msg-empty p {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+footer {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #0A3871;
+    font-weight: 700;
+}
+
+#text {
+    color: var(--cinza);
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+#msg-empty #text {
+    text-align: left;
+}

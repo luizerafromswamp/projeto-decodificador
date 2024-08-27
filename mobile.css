@@ -1,0 +1,52 @@
+@media (max-width: 912px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    textarea {
+        height: 450px;
+    }
+
+    .desc-text {
+        width: 727px !important;
+    }
+
+    #msg-empty {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 428px) {
+    .container {
+        flex-direction: column;
+
+    }
+
+    textarea {
+        height: 350px;
+        width: 380px !important;
+
+
+    }
+
+    .desc-text {
+        align-items: center;
+        width: 350px !important;
+        height: 500px !important;
+    }
+
+    #msg-empty {
+        width: 350px;
+
+    }
+
+    #msg-empty h2 {
+        font-size: 20px;
+    }
+
+}
